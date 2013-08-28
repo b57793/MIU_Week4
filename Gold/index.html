@@ -1,0 +1,363 @@
+<!doctype html>  
+<!-- Derick Mullis Mobile Interfaces and Usability_1308 Project 2 -->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Golden App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+  <link rel="stylesheet" href="css/themes/MIU-Project4.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+
+<body>
+<!-- Home page -->
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed" data-id="head">
+			<h1>Stash Keeper</h1>
+		</div> 
+			<div data-role="content">
+				<form align="center">
+					<div data-role="fieldcontain">
+						<div class="ui-grid-a">
+							<div class="ui-block-a"></div>
+		    				<div class="ui-block-b"></div>
+							<div class="ui-block-c"><div><img src="images/dragon2.gif" alt="Dragon" align="center"></div></div>
+		    				<div class="ui-block-d"><div><br><br><br><br><a href="#form" data-role="button" data-theme="e" data-iconpos="right" data-icon="plus" data-mini="true">Stash it<br>NOW!</a></div></div>
+	    				</div>
+	    			</div>
+				</form>
+			</div>
+<!-- Whenever linking to an item you do not want jQM to link to add data-ajax="false" to the link that takes you to the page -->
+		<div data-role="content" style="clear:both">
+	        <ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Browse</li>
+				<li>
+					<a href="#name" data-transition="slide">
+						<h3>Name</h3>
+						<p>Browse items by name</p>
+					</a>
+				</li>
+				<li>
+					<a href="error.html">
+						<h3>Archetype</h3>
+						<p>Browse items by archetype</p>
+					</a>
+				</li>
+				<li>
+					<a href="error.html">
+						<h3>Type</h3>
+						<p>Browse items by type</p>
+					</a>
+				</li>
+				<li>
+					<a href="error.html">
+						<h3>Classification</h3>
+						<p>Browse items by classification</p>
+					</a>
+				</li>
+				<li>
+					<a href="error.html">
+						<h3>Quality</h3>
+						<p>Browse items by quality</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Name page -->
+	<div data-role="page" id="name" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>Items by Name</h1>
+		</div> 
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Weapons</li>
+				<li>
+					<a href="#cleaver" data-transition="slide"><h3>Mega Cleaver</h3></a>
+				</li>
+				<li>
+					<a href="#stabber" data-transition="slide"><h3>Uber Stabber</h3></a>
+				</li>
+				<li data-role="list-divider">Armor</li>
+				<li>
+					<a href="#robes" data-transition="slide">
+						<h3>Robes of WIN</h3>
+					</a>
+				</li>
+			</ul>
+		</div>	
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- About page -->
+		<div data-role="page" id="about" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>About</h1>
+		</div> 
+		<div data-role="content">
+			<h3><a href="#home">Home Link</a></h3>
+			<h3><a href="https://github.com/b57793/MIU_Week2">GIT Repository Link</a></h3>
+			<h3><a href="https://github.com/b57793/MIU_Week2/tree/master/Bronze">GIT Bronze App Link</a></h3>
+			<h3><a href="https://github.com/b57793/MIU_Week2/tree/master/Gold">GIT Gold App Link</a></h3>
+		</p>My name is Derick Mullis and I am fairly new to all of this.  However, with each class I'm gaining bits of confidence and reading/writing code is beginning to make sense.  While I may struggle, I present to you, my first attempts at working with jQM.</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Cleaver drill down page -->
+	<div data-role="page" id="cleaver" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>Items by Name</h1>
+		</div> 
+		<div>
+			<h3>Mega Cleaver</h3>
+			<p>Archetype: Warrior</p>
+			<p>Type: Weapon</p>
+			<p>Classification: 2 handed</p>
+			<p>Quality: Legendary</p>
+			<p>Sell Value: 300</p>
+			<p>Date Stashed: 2013-06-24</p>
+			<p>Dropped From: Dark Butcher</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Stabber drill down page -->
+	<div data-role="page" id="stabber" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>Items by Name</h1>
+		</div> 
+		<div>
+			<h3>Uber Stabber</h3>
+			<p>Archetype: Rogue</p>
+			<p>Type: Weapon</p>
+			<p>Classification: 1 handed</p>
+			<p>Quality: Magical</p>
+			<p>Sell Value: 350</p>
+			<p>Date Stashed: 2013-06-22</p>
+			<p>Dropped From: Sneaky  McDodge 'n Stuff</p>		
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Robes drill down page -->
+	<div data-role="page" id="robes" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>Items by Name</h1>
+		</div> 
+		<div>
+			<h3>Robes of WIN</h3>
+			<p>Archetype: Mage</p>
+			<p>Type: Armor</p>
+			<p>Classification: Light Armor</p>
+			<p>Quality: Legendary</p>
+			<p>Sell Value: 300</p>
+			<p>Date Stashed: 2013-06-23</p>
+			<p>Dropped From: That one guy who did bad things</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- News Feed page -->
+	<div data-role="page" id="feed" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head" >
+			<h1>Items by Name</h1>
+		</div> 
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">August 15, 2013</li>
+				<li>
+					<h3>Mega Cleaver</h3>
+				</li>
+				<li>
+					<h3>Uber Stabber</h3>
+				</li>
+				<li data-role="list-divider">August 13, 2013</li>
+				<li>
+					<h3>Robes of WIN</h3>
+				</li>
+				<li data-role="list-divider">August 08, 2013</li>
+				<li>
+					<h3>Vorpal Stabber</h3>
+				</li>
+				<li>
+					<h3>Light Cleaver</h3>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide" class="ui-btn-active ui-state-persist">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- The Form -->
+	<div data-role="page" id="form" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-id="head">
+			<h1>Stash your item</h1>
+		</div>	 
+			<div data-role="content" data-theme="b">
+				<form action="" method="post" id="recordform">
+				<!-- for every form element you create the name & id must be the same -->
+					<div data-role="fieldcontain">
+						<label for="itemname">*Item Name</label>
+						<input type="text" name="itemname" id="itemname" placeholder="Ex: Cloak of Coding" class="required"/>
+					</div>
+					<div data-role="fieldcontain">
+					<!--  can select as many checkboxes as needed.  Multiple selections allowed. -->
+						<fieldset data-role="controlgroup">
+							<legend>*Archetype</legend>
+							<p>Who can use this item? Click all that apply.</p>
+							<input type="checkbox" value="Warrior" name="archetype" id="archetype1" class="required"/>
+							<label for="archetype1">Warrior</label>
+							<input type="checkbox" value="Rogue" name="archetype" id="archetype2" />
+							<label for="archetype2">Rogue</label>
+							<input type="checkbox" value="Mage" name="archetype" id="archetype3" />
+							<label for="archetype3">Mage</label>
+						</fieldset>
+					</div>
+					<div data-role="fieldcontain">
+					<!--  datatype in fieldset defaults to vertical but can be changed Example:  <fieldset data-role="controlgroup" data-type="horizontal"> -->
+						<fieldset data-role="controlgroup">
+							<legend>*Item Type</legend>
+							<p>What kind of item is it?</p>
+							<input type="radio" value="weapon" name="type" id="type1" class="required" />
+							<label for="type1">Weapon</label>
+							<input type="radio" value="armor" name="type" id="type2" />
+							<label for="type2">Armor</label>
+						</fieldset>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="classification">Classification</label>
+							<p>Select item description from the below.</p>	
+							<select name="classification" id="classification" data-native-menu="false">
+								<option data-placeholder="true" >Please select classification</option>
+								<option value="lightarmor">Light Armor</option>
+								<option value="mediumarmor">Medium Armor</option>
+								<option value="heavyarmor">Heavy Armor</option>
+								<option value="1handed">1 handed</option>
+								<option value="2handed">2 handed</option>
+								<option value="ranged">Ranged</option>
+								<option value="staff">Staff</option>
+							</select>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="quality">Quality</label>
+						<p>Select item quality from the below.</p>	
+						<select name="quality" id="quality" data-native-menu="false">
+							<option data-placeholder="true">Please select quality</option>
+								<option value="common" selected="selected">Common</option>
+								<option value="magical">Magical</option>
+								<option value="legendary">Legendary</option>
+							</optgroup>
+						</select>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="sellvalue">Value</label>
+						<p>What is the estimated value of the item?</p>
+						<input type="range" name="sellvalue" id="sellvalue" value="150" min="50" max="5000" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="mydate">*Date</label>
+						<input name="mydate" id="mydate" type="date" class="required date"data-role="datebox" data-options='{"mode": "calbox", "useTodayButton": true}' placeholder="MM/DD/YYYY" />
+
+					</div>
+					<div data-role="fieldcontain">
+						<label for="dropped">Dropped From</label>
+						<p><br></p>
+						<textarea placeholder="Ex: Which monster or dungeon" id="dropped"></textarea>
+					</div>
+					<div data-role="fieldcontain">
+						<p style="font-size:12pt">* required information for stashing</p>
+						<div class="ui-grid-a">
+							<div class="ui-block-a"><input type="submit" value="Stash It!" data-theme="b"></div>
+		    				<div class="ui-block-b" style="margin-top:11px; padding-left:12px">|       <a href="#">Clear</a></div>
+						</div>
+					</div>
+<!--	testing			<div data-role="fieldcontain">
+						<p><a href="" id="clearData" data-ajax="false">Clear Stored Items</a>&nbsp;&nbsp;&nbsp;<a href="" id="displayData" data-ajax="false">Display Items</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
