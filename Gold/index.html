@@ -30,61 +30,62 @@
 
 <body>
 <!-- Home page -->
-	<div data-role="page" id="home" data-theme="e">
+	<div data-role="page" id="home" data-theme="c">
 
-		<div data-role="header" data-position="fixed" data-id="head">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Stash Keeper</h1>
 		</div> 
 
-			<div data-role="content">
+			<div data-role="content" data-theme="c">
 				<form align="center">
 					<div data-role="fieldcontain">
 						<div class="ui-grid-a">
 							<div class="ui-block-a"></div>
 		    				<div class="ui-block-b"></div>
 							<div class="ui-block-c"><div><img src="images/dragon2.gif" alt="Dragon" align="center"></div></div>
-		    				<div class="ui-block-d"><div><br><br><br><br><a href="#form" data-role="button" data-theme="a" data-iconpos="right" data-icon="plus" data-mini="true">Stash it<br>NOW!</a></div></div>
+		    				<div class="ui-block-d"><div><br><br><br><br><a href="#form" data-role="button" data-theme="e" data-iconpos="right" data-icon="plus" data-mini="true">Stash it<br>NOW!</a></div></div>
 	    				</div>
 	    			</div>
 				</form>
-			</div>
 <!-- Whenever linking to an item you do not want jQM to link to add data-ajax="false" to the link that takes you to the page -->
-		<div data-role="content" style="clear:both">
-	        <ul data-role="listview" data-inset="true" data-filter="true">
-				<li data-role="list-divider">Browse</li>
-				<li>
-					<a href="#name" data-transition="slide">
-						<h3>Name</h3>
-						<p>Browse items by name</p>
-					</a>
-				</li>
-				<li>
-					<a href="error.html">
-						<h3>Archetype</h3>
-						<p>Browse items by archetype</p>
-					</a>
-				</li>
-				<li>
-					<a href="error.html">
-						<h3>Type</h3>
-						<p>Browse items by type</p>
-					</a>
-				</li>
-				<li>
-					<a href="error.html">
-						<h3>Classification</h3>
-						<p>Browse items by classification</p>
-					</a>
-				</li>
-				<li>
-					<a href="error.html">
-						<h3>Quality</h3>
-						<p>Browse items by quality</p>
-					</a>
-				</li>
-			</ul>
+			<div data-role="content" style="clear:both" data-theme="c">
+		        <ul data-role="listview" data-filter="true" data-theme="c" style="border-width:0px">
+					<li data-role="list-divider" data-theme="c">Browse</li>
+					<li data-theme="c">
+						<a href="#name" data-transition="slide">
+							<h3>Name</h3>
+							<p>Browse items by name</p>
+						</a>
+					</li>
+					<li data-theme="c">
+						<a href="error.html">
+							<h3>Archetype</h3>
+							<p>Browse items by archetype</p>
+						</a>
+					</li>
+					<li data-theme="c">
+						<a href="error.html">
+							<h3>Type</h3>
+							<p>Browse items by type</p>
+						</a>
+					</li>
+					<li data-theme="c">
+						<a href="error.html">
+							<h3>Classification</h3>
+							<p>Browse items by classification</p>
+						</a>
+					</li>
+					<li data-theme="c">
+						<a href="error.html">
+							<h3>Quality</h3>
+							<p>Browse items by quality</p>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist" data-transition="slide">Home</a></li>
@@ -94,42 +95,41 @@
 			</div>
 		</div>
 	</div>
-</div>
-<!-- Name page -->
-	<div data-role="page" id="name" data-add-back-btn="true" data-theme="d">
-		<div data-role="header" data-position="fixed" data-id="head" >
+	<!-- Name page -->
+	<div data-role="page" id="name" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Items by Name</h1>
 		</div> 
-		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-filter="true">
-				<li data-role="list-divider">Weapons</li>
-				<li>
+		<div data-role="content" data-theme="c">
+			<ul data-theme="c" data-role="listview" data-filter="true">
+				<li data-role="list-divider" data-theme="c">Weapons</li>
+				<li data-theme="c">
 					<a href="#cleaver" data-transition="slide"><h3>Mega Cleaver</h3></a>
 				</li>
-				<li>
+				<li data-theme="c">
 					<a href="#stabber" data-transition="slide"><h3>Uber Stabber</h3></a>
 				</li>
-				<li data-role="list-divider">Armor</li>
-				<li>
+				<li data-role="list-divider" data-theme="c">Armor</li>
+				<li data-theme="c">
 					<a href="#robes" data-transition="slide">
 						<h3>Robes of WIN</h3>
 					</a>
 				</li>
 			</ul>
 		</div>	
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
-			<div data-role="navbar">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
+			<div data-role="navbar" data-theme="c">
 				<ul>
-					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-					<li><a href="#about" data-icon="info" data-transition="slide">About</a></li>
-					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slide" data-theme="c">Home</a></li>
+					<li><a href="#about" data-icon="info" data-transition="slide" data-theme="c">About</a></li>
+					<li><a href="#feed" data-icon="bars" data-transition="slide" data-theme="c">News Feed</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 <!-- About page -->
-		<div data-role="page" id="about" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head" >
+		<div data-role="page" id="about" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>About</h1>
 		</div> 
 		<div data-role="content">
@@ -139,9 +139,9 @@
 			<h3><a href="https://github.com/b57793/MIU_Week2/tree/master/Gold">GIT Gold App Link</a></h3>
 		</p>My name is Derick Mullis and I am fairly new to all of this.  However, with each class I'm gaining bits of confidence and reading/writing code is beginning to make sense.  While I may struggle, I present to you, my first attempts at working with jQM.</p>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
-				<ul>
+				<ul data-theme="c">
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
 					<li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist" data-transition="slide">About</a></li>
 					<li><a href="#feed" data-icon="bars" data-transition="slide">News Feed</a></li>
@@ -150,11 +150,11 @@
 		</div>
 	</div>
 <!-- Cleaver drill down page -->
-	<div data-role="page" id="cleaver" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head" >
+	<div data-role="page" id="cleaver" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Items by Name</h1>
 		</div> 
-		<div>
+		<div data-theme="c">
 			<h3>Mega Cleaver</h3>
 			<p>Archetype: Warrior</p>
 			<p>Type: Weapon</p>
@@ -164,7 +164,7 @@
 			<p>Date Stashed: 2013-06-24</p>
 			<p>Dropped From: Dark Butcher</p>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -175,11 +175,11 @@
 		</div>
 	</div>
 <!-- Stabber drill down page -->
-	<div data-role="page" id="stabber" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head" >
+	<div data-role="page" id="stabber" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Items by Name</h1>
 		</div> 
-		<div>
+		<div data-theme="c">
 			<h3>Uber Stabber</h3>
 			<p>Archetype: Rogue</p>
 			<p>Type: Weapon</p>
@@ -189,7 +189,7 @@
 			<p>Date Stashed: 2013-06-22</p>
 			<p>Dropped From: Sneaky  McDodge 'n Stuff</p>		
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -200,11 +200,11 @@
 		</div>
 	</div>
 <!-- Robes drill down page -->
-	<div data-role="page" id="robes" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head" >
+	<div data-role="page" id="robes" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Items by Name</h1>
 		</div> 
-		<div>
+		<div data-theme="c">
 			<h3>Robes of WIN</h3>
 			<p>Archetype: Mage</p>
 			<p>Type: Armor</p>
@@ -214,7 +214,7 @@
 			<p>Date Stashed: 2013-06-23</p>
 			<p>Dropped From: That one guy who did bad things</p>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -226,32 +226,32 @@
 	</div>
 <!-- News Feed page -->
 	<div data-role="page" id="feed" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head" >
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Items by Name</h1>
 		</div> 
 		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-filter="true">
-				<li data-role="list-divider">August 15, 2013</li>
-				<li>
+			<ul data-role="listview" data-filter="true" data-theme="c">
+				<li data-role="list-divider" data-theme="c">August 15, 2013</li>
+				<li data-theme="c">
 					<h3>Mega Cleaver</h3>
 				</li>
-				<li>
+				<li data-theme="c">
 					<h3>Uber Stabber</h3>
 				</li>
-				<li data-role="list-divider">August 13, 2013</li>
-				<li>
+				<li data-role="list-divider" data-theme="c">August 13, 2013</li>
+				<li data-theme="c">
 					<h3>Robes of WIN</h3>
 				</li>
-				<li data-role="list-divider">August 08, 2013</li>
-				<li>
+				<li data-role="list-divider" data-theme="c">August 08, 2013</li>
+				<li data-theme="c">
 					<h3>Vorpal Stabber</h3>
 				</li>
-				<li>
+				<li data-theme="c">
 					<h3>Light Cleaver</h3>
 				</li>
 			</ul>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="bottomnav">
+		<div data-role="footer" data-position="fixed" data-id="bottomnav" data-theme="c">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
@@ -262,13 +262,16 @@
 		</div>
 	</div>
 <!-- The Form -->
-	<div data-role="page" id="form" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-id="head">
+	<div data-role="page" id="form" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed" data-id="head" data-theme="c">
 			<h1>Stash your item</h1>
 		</div>	 
-			<div data-role="content" data-theme="b">
-				<form action="" method="post" id="recordform">
+			<div data-role="content" data-theme="c">
+				<form action="" method="post" id="recordform" data-theme="c">
 				<!-- for every form element you create the name & id must be the same -->
+					<div data-role="fieldcontain">
+						<p style="font-size:12pt">* required information for stashing</p>
+					</div>
 					<div data-role="fieldcontain">
 						<label for="itemname">*Item Name</label>
 						<input type="text" name="itemname" id="itemname" placeholder="Ex: Cloak of Coding" class="required"/>
@@ -338,9 +341,8 @@
 						<textarea placeholder="Ex: Which monster or dungeon" id="dropped"></textarea>
 					</div>
 					<div data-role="fieldcontain">
-						<p style="font-size:12pt">* required information for stashing</p>
 						<div class="ui-grid-a">
-							<div class="ui-block-a"><input type="submit" value="Stash It!" data-theme="b"></div>
+							<div class="ui-block-a"><input type="submit" value="Stash It!" data-theme="e"></div>
 		    				<div class="ui-block-b" style="margin-top:11px; padding-left:12px">|       <a href="#">Clear</a></div>
 						</div>
 					</div>

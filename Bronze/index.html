@@ -19,6 +19,7 @@
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/themes/MIU.min.css">
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -26,9 +27,9 @@
 
 <body>
 <!-- Home page -->
-	<div data-role="page" id="home" data-theme="c">
+	<div data-role="page" id="home" data-theme="a">
 		<div data-role="header" data-position="fixed" data-id="head">
-			<h1>Stash Keeper</h1>
+			<h1><img src="images/chest2.gif" alt="Inline Branding" class="align-center"/></h1>
 		</div> 
 			<div data-role="content">
 				<form align="center">
@@ -83,14 +84,14 @@
 		</div>
 	</div>
 <!-- Name page -->
-		<div data-role="page" id="name" data-add-back-btn="true">
+		<div data-role="page" id="name" data-add-back-btn="true" data-theme="a">
 		<div data-role="header" data-position="fixed" data-id="head" >
-			<h1>Items by Name</h1>
+			<h1><img src="images/chest2.gif" alt="Inline Branding" class="align-center"/></h1>
 		</div> 
 		<div data-role="content">
 <!-- Accordian Menu -->
 			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+				<div data-role="collapsible" data-collapsed="true" data-theme="a" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
 					<h3>Mega Cleaver</h3>
 					<p>Archetype: Warrior</p>
 					<p>Type: Weapon</p>
@@ -100,7 +101,7 @@
 					<p>Date Stashed: 2013-06-24</p>
 					<p>Dropped From: Dark Butcher</p>
 				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+				<div data-role="collapsible" data-collapsed="true" data-theme="a" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
 					<h3>Uber Stabber</h3>
 					<p>Archetype: Rogue</p>
 					<p>Type: Weapon</p>
@@ -110,7 +111,7 @@
 					<p>Date Stashed: 2013-06-22</p>
 					<p>Dropped From: Sneaky  McDodge 'n Stuff</p>
 					</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+				<div data-role="collapsible" data-collapsed="true" data-theme="a" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
 					<h3>Robes of WIN</h3>
 					<p>Archetype: Mage</p>
 					<p>Type: Armor</p>
@@ -120,7 +121,7 @@
 					<p>Date Stashed: 2013-06-23</p>
 					<p>Dropped From: That one guy who did bad things</p>
 					</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+				<div data-role="collapsible" data-collapsed="true" data-theme="a" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
 					<h3>Light Cleaver</h3>
 					<p>Archetype: Warrior</p>
 					<p>Type: Weapon</p>
@@ -130,7 +131,7 @@
 					<p>Date Stashed: 2013-06-24</p>
 					<p>Dropped From: Butch</p>
 					</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+				<div data-role="collapsible" data-collapsed="true" data-theme="a" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
 					<h3>Void Stabber</h3>
 					<p>Archetype: Rogue</p>
 					<p>Type: Weapon</p>
@@ -153,9 +154,9 @@
 		</div>
 	</div>
 <!-- About page -->
-		<div data-role="page" id="about" data-add-back-btn="true">
+		<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
 		<div data-role="header" data-position="fixed" data-id="head" >
-			<h1>About</h1>
+			<h1><img src="images/chest2.gif" alt="Inline Branding" class="align-center"/></h1>
 		</div> 
 		<div data-role="content">
 			<h3><a href="#home">Home Link</a></h3>
@@ -175,20 +176,20 @@
 		</div>
 	</div>
 <!-- Gallery page -->
-		<div data-role="page" id="gallery" data-add-back-btn="true">
+		<div data-role="page" id="gallery" data-add-back-btn="true" data-theme="a">
 		<div data-role="header" data-position="fixed" data-id="head" >
-			<h1>Gallery</h1>
+			<h1><img src="images/chest2.gif" alt="Inline Branding" class="align-center"/></h1>
 		</div> 
-		<div data-role="content">
-			<form align="center">
+		<div data-role="content" data-theme="a">
+			<form align="center" data-theme="a">
 				<div data-role="fieldcontain">
-					<div class="ui-grid-a">
-					<div class="ui-block-a"><div class="ui-bar ui-bar-c"><img src="images/tree.png" align="center" width="100" height="100"><br/><p>This is a tree<p></div></div>
-    				<div class="ui-block-b"><div class="ui-bar ui-bar-c"><img src="images/question.png" align="center" width="100" height="100"><br/><p>This is a question mark<p></div></div>
-					<div class="ui-block-c"><div class="ui-bar ui-bar-c"><img src="images/bow.png" align="center" width="100" height="100"><br/><p>This is a bow<p></div></div>
-    				<div class="ui-block-d"><div class="ui-bar ui-bar-c"><img src="images/vial.png" align="center" width="100" height="100"><br/><p>This is a potion<p></div></div>
-    				<div class="ui-block-d"><div class="ui-bar ui-bar-c"><img src="images/dragon.png" align="center" width="100" height="100"><br/><p>This is a monster<p></div></div>
-    				<div class="ui-block-d"><div class="ui-bar ui-bar-c"><img src="images/candy.png" align="center" width="100" height="100"><br/><p>This is a nomnoms<p></div></div>
+					<div class="ui-grid-a" >
+					<div class="ui-block-a"><div class="ui-bar ui-bar-c"><img src="images/tree.png" align="center" width="100px" height="100px"><br/><p>This is a tree</p></div></div>
+    				<div class="ui-block-b"><div class="ui-bar ui-bar-c"><img src="images/question.png" align="center" width="100px" height="100px"><br/><p>This is a question mark</p></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-c"><img src="images/bow.png" align="center" width="100px" height="100px"><br/><p>This is a bow</p></div></div>
+    				<div class="ui-block-b"><div class="ui-bar ui-bar-c"><img src="images/vial.png" align="center" width="100px" height="100px"><br/><p>This is a potion</p></div></div>
+    				<div class="ui-block-a"><div class="ui-bar ui-bar-c"><img src="images/dragon.png" align="center" width="100px" height="100px"><br/><p>This is a monster</p></div></div>
+    				<div class="ui-block-b"><div class="ui-bar ui-bar-c"><img src="images/candy.png" align="center" width="100px" height="100px"><br/><p>This is a nomnoms</p></div></div>
     			</div>
 			</form>
 	        <ul data-role="listview" data-inset="true">
